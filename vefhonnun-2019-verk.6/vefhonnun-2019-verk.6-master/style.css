@@ -1,0 +1,185 @@
+
+*{
+    padding: 0;
+    font-family: 'Vollkorn', serif;
+}
+
+.wrapper {
+    width: 100vh;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 5% auto 25% 5%;
+    grid-template-areas:
+        "header header"
+        "nav    nav"
+        "main   aside"
+        "pic    pic2"
+        "footer footer";
+}
+
+.header{
+    grid-area: header;
+    background: linear-gradient(rgb(103, 103, 247), blue, rgb(103, 103, 247))
+}
+
+header h1{
+    font-size: 4em;
+    text-align: center;
+    font-family: serif;
+    color: rgb(255, 255, 255)
+}
+
+header a{
+    display: block;
+    text-align: center;
+}
+
+.nav{
+    grid-area: nav;
+    text-align: center;
+    background: linear-gradient(rgb(255, 185, 54), rgb(126, 82, 0));
+}
+
+nav a, aside a, header a, footer a{
+    color: white;
+}
+
+.aside{
+    grid-area: aside;
+    padding: 5px;
+    background: linear-gradient(rgb(85, 85, 85), rgb(20, 20, 20));
+    color: white;
+}
+
+.main{
+    grid-area: main;
+    padding: 5px;
+    background: linear-gradient(rgb(85, 85, 85), rgb(20, 20, 20));
+    color: white;
+}
+
+.footer{
+    grid-area: footer;
+    outline: 1px black solid;
+    text-align: center;
+    background: linear-gradient(rgb(255, 185, 54), rgb(126, 82, 0));
+}
+
+body, html{
+    height: 100vh;
+    margin: 0 auto;  
+    padding: 1%;
+}
+
+.picture{
+    grid-area: pic;
+    padding: 0;
+    margin: 0;
+}
+
+.picture2{
+    grid-area: pic2;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    margin: 0;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+li{
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+aside p{
+    text-align: bottom;
+}
+
+@media only screen and (max-width: 30em) {
+    .wrapper {
+        width: 100vh;
+        height: 100vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 10% auto auto 35% 35% 10%;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "pic"
+            "pic2"
+            "footer";
+    }
+    
+    ul{
+        display: flex;
+        margin: 0;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    li{
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 100%;
+        margin-left: 100%;
+        width: 100%;
+    }
+}
+    
+
+@media only screen and (min-width: 30em) and (max-width: 37.5em) {
+    .wrapper {
+        width: 100vh;
+        height: 100vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 20% 5% auto 25% 5%;
+        grid-template-areas:
+            "header header"
+            "nav    nav"
+            "main   aside"
+            "pic    pic2"
+            "footer footer";
+    }
+}
+
+@media only screen and (min-width: 37.5em) and (max-width: 48em) {    
+    .wrapper {
+        width: 100vh;
+        height: 100vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 5% auto 25% 5%;
+        grid-template-areas:
+            "header header"
+            "nav    nav"
+            "main   aside"
+            "pic    pic2"
+            "footer footer";
+    }
+}
+

@@ -1,0 +1,28 @@
+body {
+    max-width: 60em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0em auto;
+}
+
+.box {
+    border: 1px solid black;
+    width: 49.7%; 
+    float: left;
+}
+
+.athugid {
+    background-color: yellow;
+    text-align: center;
+    clear: both;
+}
+
+.imgR {
+    float: right;
+
+}
+
+footer {
+    border: 1px solid black;
+    clear: both;
+}
